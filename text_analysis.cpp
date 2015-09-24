@@ -6,6 +6,7 @@
 #include<iomanip>
 
 using namespace std;
+//range words according to ascII
 
 void Merge(string* array, int left, int mid, int right)
 {
@@ -49,6 +50,7 @@ Merge(array, left, mid, right);
 }
 }
 
+//merge the same word
 int merge(string* array, int* num, int size){
 	int i,n=2;
 	for (i = 1; i < size-1; i++){
@@ -67,7 +69,7 @@ int merge(string* array, int* num, int size){
 
 
 void main(){
-	ifstream ifile("C:\\Users\\tianyu\\Desktop\\R\\trump\\twittext.txt");//read words from tweets.txt
+	ifstream ifile("trump\\twittext.txt");//read words from tweets.txt
 	if (!ifile){
 		cout << "fail to open file " << endl;
 		exit(0);
@@ -96,7 +98,7 @@ void main(){
 	
 	
 	ofstream ofile;//save the result in ft1.txt
-	ofile.open("C:\\Users\\tianyu\\Desktop\\R\\trump\\ft2.txt");
+	ofile.open("trump\\ft2.txt");
 	ofile << "words tweeted"<<endl;
 	for (i = 0; i < n; i++){
 		ofile << setw(25) << data[i] <<pnum[i]<<endl;
