@@ -2,6 +2,7 @@
 get data from tweet
 
 
+![stats_counts](https://cloud.githubusercontent.com/assets/8493530/10064607/26f81e22-6248-11e5-96e6-9c7f09397956.png)
 
 
 
